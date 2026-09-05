@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>SearchUtilities</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Mikkel Vinther</Authors>
+    <Description>Tokenization, Unicode normalization, and the document/search wire models shared by the SearchSystem microservices (SearchAPI, indexer, ConsoleSearch).</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
