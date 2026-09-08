@@ -14,4 +14,8 @@ RUN dotnet pack SearchUtilities.csproj -c Release -o /packages
 
 # Final stage holds just the packed .nupkg.
 FROM scratch
+ARG VERSION=1.0.1
+LABEL org.opencontainers.image.title="searchv2-search-utilities" \
+      org.opencontainers.image.version="${VERSION}" \
+      org.opencontainers.image.source="https://github.com/searchv2/search-utilities"
 COPY --from=build /packages/ /
