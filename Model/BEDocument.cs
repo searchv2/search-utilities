@@ -1,15 +1,14 @@
 using System;
-namespace Shared.Model
+namespace Shared.Model;
+
+public class BEDocument
 {
-    public class BEDocument
-    {
-        public int mId;
+    public int mId;
 
-        public required String mUrl;
+    public required String mUrl;
 
-        public required String mIdxTime;
+    public required String mIdxTime;
 
-        public required String mCreationTime;
+    public required String mCreationTime;
 
-    }
 }
